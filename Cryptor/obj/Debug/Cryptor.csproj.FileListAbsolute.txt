@@ -1,0 +1,5 @@
+C:\Users\Administrator\내 문서\Visual Studio 2015\Projects\Cryptor\Cryptor\obj\Debug\Cryptor.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\내 문서\Visual Studio 2015\Projects\Cryptor\Cryptor\bin\Debug\Cryptor.dll
+C:\Users\Administrator\내 문서\Visual Studio 2015\Projects\Cryptor\Cryptor\bin\Debug\Cryptor.pdb
+C:\Users\Administrator\내 문서\Visual Studio 2015\Projects\Cryptor\Cryptor\obj\Debug\Cryptor.dll
+C:\Users\Administrator\내 문서\Visual Studio 2015\Projects\Cryptor\Cryptor\obj\Debug\Cryptor.pdb

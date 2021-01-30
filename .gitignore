@@ -1,0 +1,56 @@
+### VisualStudio ###
+
+# User-specific files
+*.suo
+*.user
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+bin/x64/
+bin/x86/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Roslyn stuff
+*.sln.ide
+*.ide/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Nuget Packages
+*.nupkg
+**/packages/*
+
+### Windows ###
+
+# Windows image file caches
+Thumbs.db
+enthumbs.db
+
+### OSX ###
+
+.DS_Store
+
+.svn/
+src/Apparelbase.WebHost/Interface/
+src/Apparelbase.WebHost/Logs/
+*.bak
+src/Apparelbase.WebHost/log.txt
+src/.vs/
+*.log
+src/Apparelbase.Worksheet.Viewer.Setup/Apparelbase Worksheet Viewer-cache/
+dotNetFx40_Full_setup.exe
+*.svclog
+.vs/
+src/UpgradeLog.htm
+src/Apparelbase.Worksheet.Viewer.Setup/Apparelbase Worksheet Viewer.back.aip
+src/Apparelbase.Worksheet.Viewer.Setup/dotNetFx40_Full_x86_x64.exe
+src/Apparelbase.Worksheet.Viewer.Setup/Apparelbase Worksheet Viewer New-cache/
+src/Apparelbase.Worksheet.Viewer.Setup/Setup Files/

@@ -1,6 +1,6 @@
 C# 암/복호화 DLL
 개발 툴 : Microsoft Visual Studio 15
-대상 프레임워크 : .NET Framework 4 Client Profile
+대상 프레임워크 : .NET Framework 4.5
 
 1. 구분
  1) Hash
@@ -14,15 +14,39 @@ C# 암/복호화 DLL
 
 2. 사용 예제
   1) Hash 암호화 및 비교
-    string text = "Test text for SHA512";
-    string hash = Cryptor.Hash.encryptSHA512(text);
-    bool isSameHash = Cryptor.Hash.isSameHash(text, hash, "SHA512");
-    Console.WriteLine(isSameHash); // 출력 : True
+			// MD5
+			string text = "Plan text for hash test.";
+			string hash = Hash.EncryptMD5(text, Encoding.Unicode);
+			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.MD5, Encoding.Unicode);
+			Console.WriteLine(isSame); // Output : true
+
+			// SHA256
+			string text = "Plan text for hash test.";
+			string hash = Hash.EncryptSHA256(text, Encoding.Unicode);
+			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA256, Encoding.Unicode);
+			Console.WriteLine(isSame); // Output : true
+
+			// SHA256
+			string text = "Plan text for hash test.";
+			string hash = Hash.EncryptSHA384(text, Encoding.Unicode);
+			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA384, Encoding.Unicode);
+			Console.WriteLine(isSame); // Output : true
+
+			// SHA256
+			string text = "Plan text for hash test.";
+			string hash = Hash.EncryptSHA512(text, Encoding.Unicode);
+			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA512, Encoding.Unicode);
+			Console.WriteLine(isSame); // Output : true
 
   2) AES 암/복호화
-    string text = "Test text for AES256";
-    string key  = "Test key for AES256";
-    string encText = Cryptor.AES.encryptAES256(text, key);
-    string decText = Cryptor.AES.decryptAES256(encText, key);
-    bool isSameText = text == decText;
-    Console.WriteLine(isSameText); // 출력 : True
+			// AES
+			string text = "Plan text for aes test.";
+			string key = "Plan text for aes test.";
+			string encrypted = AES.Encrypt(text, key, Encoding.Unicode);
+			Console.WriteLine(encrypted);
+
+			string decrypted = AES.Decrypt(encrypted, key, Encoding.Unicode);
+			Console.WriteLine(decrypted);
+
+			bool isSame = text == decrypted;
+			Console.WriteLine(isSame); // Output : true

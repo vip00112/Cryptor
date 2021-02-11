@@ -1,5 +1,5 @@
 C# 암/복호화 DLL
-개발 툴 : Microsoft Visual Studio 15
+개발 툴 : Microsoft Visual Studio 17
 대상 프레임워크 : .NET Framework 4.5
 
 1. 구분
@@ -26,13 +26,13 @@ C# 암/복호화 DLL
 			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA256, Encoding.Unicode);
 			Console.WriteLine(isSame); // Output : true
 
-			// SHA256
+			// SHA384
 			string text = "Plan text for hash test.";
 			string hash = Hash.EncryptSHA384(text, Encoding.Unicode);
 			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA384, Encoding.Unicode);
 			Console.WriteLine(isSame); // Output : true
 
-			// SHA256
+			// SHA512
 			string text = "Plan text for hash test.";
 			string hash = Hash.EncryptSHA512(text, Encoding.Unicode);
 			bool isSame = Hash.IsSameHash(text, hash, Hash.HashType.SHA512, Encoding.Unicode);
